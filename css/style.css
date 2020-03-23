@@ -1,0 +1,24 @@
+body {
+    background-image: url(./../img/swirl_pattern.png)
+}
+
+header {
+    background: #f8f8ffd6
+}
+
+strong {
+    font-weight: bold
+}
+
+.font-20{
+    font-size: 20px
+}
+
+#metodo {
+    color: #0c0c0c
+}
+
+.bg-white-transparent {
+    background-color: #ffffffd4
+}
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuanto Cobrar por Hora</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="mb-5 py-5 bg-white-transparent">
+        <h1 class="text-center">¿Cuánto Cobrar por Hora?</h1>
+        <h2 class="text-center">Por trabajo | proyecto</h2>
+        <h3 class="text-center">"a realizar | terminar | cobrar"</h3>
+        <h4 class="text-center font-italic">¿Freelancer?</h4>
+    </header>
+    <main class="container mb-5">
+        <section class="d-flex flex-wrap justify-content-center">
+            <div class="col-md-8 bg-white-transparent pt-3">
+                <form id="formulario">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cantHoras">Cantidad de horas por día (de trabajo):</label>
+                                <input id="cantHoras" type="number" class="form-control" placeholder="Ingrese la cantidad de horas por día" required>
+                                <span class="text-help">Ejemplo: 8 o 9 horas</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cantDias">Cantidad de días a la semana (de trabajo):</label>
+                                <input id="cantDias" type="number" class="form-control" placeholder="Ingrese la cantidad de días a la semana" required>
+                                <span class="text-help">Ejemplo: 5 o 7 días</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="diasVacaciones">Días de vacaciones:</label>
+                                <input id="diasVacaciones" type="number" class="form-control" placeholder="Ingrese ingrese los días de vacaciones" required>
+                                <span class="text-help">Ejemplo: 10 o 15 días</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cantFeriados">Cantidad de feriados al año (Opcional):</label>
+                                <input id="cantFeriados" type="number" class="form-control" placeholder="Ingrese cantidad de feriados al año">
+                                <span class="text-help">Ejemplo 15 o 18 dependiendo del país</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="diasVacaciones">Total de Gastos Extras (Opcional):</label>
+                                <input id="diasVacaciones" type="number" class="form-control" placeholder="Ingrese el total de gastos extras">
+                                <span class="text-help">Luz, agua, complementos de pagos, licencias, servicios externos, etc...</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cantFeriados">Porcentaje de beneficio:</label>
+                                <input id="cantFeriados" type="number" class="form-control" placeholder="Ingrese porcentaje de beneficio">
+                                <span class="text-help">El promedio es de 35% del total - 0% a 100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <button class="btn btn-primary btn-lg btn-block font-20">Calcular</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/app.js" defer></script>
+</body>
+</html>
