@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuanto Cobrar por Hora</title>
+    <title>¿Cuanto Cobrar por Hora?</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -18,6 +18,12 @@
         <section class="d-flex flex-wrap justify-content-center">
             <div class="col-md-8 bg-white-transparent pt-3">
                 <form id="formulario">
+                    <div class="form-group">
+                        <label for="salario">¿Cuánto quiere ganar al mes?</label>
+                        <input id="salario" type="number" class="form-control" placeholder="Ingrese su monto" required>
+                        <span class="text-help">* El sueldo que quiere mensualmente</span>
+                    </div>
+                    <hr>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -38,15 +44,15 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="diasVacaciones">Días de vacaciones:</label>
-                                <input id="diasVacaciones" type="number" class="form-control" placeholder="Ingrese ingrese los días de vacaciones" required>
+                                <label for="vacaciones">Días de vacaciones:</label>
+                                <input id="vacaciones" type="number" class="form-control" placeholder="Ingrese ingrese los días de vacaciones" required>
                                 <span class="text-help">Ejemplo: 10 o 15 días</span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="cantFeriados">Cantidad de feriados al año (Opcional):</label>
-                                <input id="cantFeriados" type="number" class="form-control" placeholder="Ingrese cantidad de feriados al año">
+                                <label for="feriados">Cantidad de feriados al año (Opcional):</label>
+                                <input id="feriados" type="number" class="form-control" placeholder="Ingrese cantidad de feriados al año">
                                 <span class="text-help">Ejemplo 15 o 18 dependiendo del país</span>
                             </div>
                         </div>
@@ -55,15 +61,15 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="diasVacaciones">Total de Gastos Extras (Opcional):</label>
-                                <input id="diasVacaciones" type="number" class="form-control" placeholder="Ingrese el total de gastos extras">
+                                <label for="gastosExtras">Total de Gastos Extras (Opcional):</label>
+                                <input id="gastosExtras" type="number" class="form-control" placeholder="Ingrese el total de gastos extras">
                                 <span class="text-help">Luz, agua, complementos de pagos, licencias, servicios externos, etc...</span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="cantFeriados">Porcentaje de beneficio:</label>
-                                <input id="cantFeriados" type="number" class="form-control" placeholder="Ingrese porcentaje de beneficio">
+                                <label for="beneficio">Porcentaje de beneficio:</label>
+                                <input id="beneficio" type="number" class="form-control" placeholder="Ingrese porcentaje de beneficio">
                                 <span class="text-help">El promedio es de 35% del total - 0% a 100%</span>
                             </div>
                         </div>
