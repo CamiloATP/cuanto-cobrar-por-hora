@@ -170,7 +170,6 @@
                 result.innerHTML = `<div class="mb-5 h3">Valor por hora de trabajo: \$${cashFormat(valorPorHoraTrabajo)}</div>`;
                 window.location.hash = '#result'; // <-- Focus
             }
-
         } 
     }
 })();
