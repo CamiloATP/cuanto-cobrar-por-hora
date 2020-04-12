@@ -20,7 +20,7 @@
                 <form id="formulario">
                     <div class="form-group">
                         <label for="salario">¿Cuánto quiere ganar al mes?</label>
-                        <input id="salario" type="number" class="form-control" placeholder="Ingrese su monto" required>
+                        <input id="salario" type="number" class="form-control" placeholder="Ingrese su monto" min="0" required>
                         <span class="text-help">* El sueldo que quiere mensualmente</span>
                     </div>
                     <hr>
@@ -28,14 +28,14 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="cantHoras">Cantidad de horas por día (de trabajo):</label>
-                                <input id="cantHoras" type="number" class="form-control" placeholder="Ingrese la cantidad de horas por día" required>
+                                <input id="cantHoras" type="number" class="form-control" placeholder="Ingrese la cantidad de horas por día" min="0" required>
                                 <span class="text-help">Ejemplo: 8 o 9 horas</span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="cantDias">Cantidad de días a la semana (de trabajo):</label>
-                                <input id="cantDias" type="number" class="form-control" placeholder="Ingrese la cantidad de días a la semana" required>
+                                <input id="cantDias" type="number" class="form-control" placeholder="Ingrese la cantidad de días a la semana" min="0" required>
                                 <span class="text-help">Ejemplo: 5 o 7 días</span>
                             </div>
                         </div>
@@ -44,15 +44,15 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="vacaciones">Días de vacaciones:</label>
-                                <input id="vacaciones" type="number" class="form-control" placeholder="Ingrese ingrese los días de vacaciones" required>
+                                <label for="vacaciones">Cantidad de días de vacaciones (Opcional):</label>
+                                <input id="vacaciones" type="number" class="form-control" placeholder="Ingrese ingrese los días de vacaciones" min="0">
                                 <span class="text-help">Ejemplo: 10 o 15 días</span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="feriados">Cantidad de feriados al año (Opcional):</label>
-                                <input id="feriados" type="number" class="form-control" placeholder="Ingrese cantidad de feriados al año">
+                                <input id="feriados" type="number" class="form-control" placeholder="Ingrese cantidad de feriados al año" min="0">
                                 <span class="text-help">Ejemplo 15 o 18 dependiendo del país</span>
                             </div>
                         </div>
@@ -62,14 +62,14 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="gastosExtras">Total de Gastos Extras (Opcional):</label>
-                                <input id="gastosExtras" type="number" class="form-control" placeholder="Ingrese el total de gastos extras">
+                                <input id="gastosExtras" type="number" class="form-control" placeholder="Ingrese el total de gastos extras" min="0">
                                 <span class="text-help">Luz, agua, complementos de pagos, licencias, servicios externos, etc...</span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="beneficio">Porcentaje de beneficio:</label>
-                                <input id="beneficio" type="number" class="form-control" placeholder="Ingrese porcentaje de beneficio">
+                                <label for="beneficio">Porcentaje de beneficio (Opcional):</label>
+                                <input id="beneficio" type="text" class="form-control" placeholder="Ingrese porcentaje de beneficio">
                                 <span class="text-help">El promedio es de 35% del total - 0% a 100%</span>
                             </div>
                         </div>
