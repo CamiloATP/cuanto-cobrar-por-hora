@@ -53,12 +53,12 @@
         formulario.onsubmit = e => {
             e.preventDefault();
             
-            const salario = comeBackCash(document.getElementById('salario').value.trim());
+            const salario = Number(comeBackCash(document.getElementById('salario').value.trim()));
             const cantHoras = Number(document.getElementById('cantHoras').value.trim());
             const cantDias = Number(document.getElementById('cantDias').value.trim());
             const vacaciones = Number(document.getElementById('vacaciones').value.trim());
             const feriados = Number(document.getElementById('feriados').value.trim());
-            const gastosExtras = comeBackCash(document.getElementById('gastosExtras').value.trim());
+            const gastosExtras = Number(comeBackCash(document.getElementById('gastosExtras').value.trim()));
             let beneficio = document.getElementById('beneficio').value.trim();
             let result = document.getElementById('result');
             let metodo = document.getElementById('metodo');
@@ -91,7 +91,7 @@
                 }
             }            
                           
-            if(gastosExtras || gastosExtras < 0) {
+            if(isNaN(gastosExtras) || gastosExtras < 0) {
                 if(!validarData(gastosExtras)) {
                     error.push('Error, ingrese valor válido de gastos extras');
                 }
